@@ -1,0 +1,6 @@
+{
+	"name": "FourthCoffeeVM",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
