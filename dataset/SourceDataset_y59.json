@@ -1,0 +1,44 @@
+{
+	"name": "SourceDataset_y59",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Southridge_Catalog_CosmosDb1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"title": {
+					"type": "string"
+				},
+				"genre": {
+					"type": "string"
+				},
+				"rating": {
+					"type": "string"
+				},
+				"runtime": {
+					"type": "integer"
+				},
+				"releaseYear": {
+					"type": "integer"
+				},
+				"availabilityDate": {
+					"type": "string"
+				},
+				"streamingAvailabilityDate": {
+					"type": "string"
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "movies"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,25 @@
+{
+	"name": "DestinationDataset_y59",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "team15synapse-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Southridge_Catalog_json",
+				"folderPath": "Raw/Southridge",
+				"fileSystem": "team15container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\"",
+			"firstRowAsHeader": true
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
