@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 13",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [MovieID]\n,[MovieTitle]\n,[Category]\n,[Rating]\n,[RunTimeMin]\n,[ReleaseDate]\n FROM [dbo].[FourthCoffee_Movies]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 32",
+	"properties": {
+		"content": {
+			"query": "DROP TABLE [dbo].[DimCustomers_FourthCoffee]\nGO\n\nSET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n\nCREATE TABLE [dbo].[DimCustomers_FourthCoffee]\n( \n\t[SourceSytemID] [int]  NOT NULL,\n\t[CustomerSK] [varchar](255)  NOT NULL,\n\t[CustomerID] [uniqueidentifier]  NOT NULL,\n\t[LastName] [varchar](255)  NOT NULL,\n\t[FirstName] [varchar](255)  NOT NULL,\n\t[AddressLine1] [varchar](255)  NOT NULL,\n\t[AddressLine2] [varchar](255)  NULL,\n\t[City] [varchar](255)  NOT NULL,\n\t[State] [char](255)  NOT NULL,\n\t[ZipCode] [char](255)  NOT NULL,\n\t[PhoneNumber] [char](200)  NOT NULL,\n\t[RecordStartDate] [date]  NOT NULL,\n\t[RecordEndDate] [date]  NULL,\n\t[ActiveFlag] [bit]  NOT NULL\n)\nWITH\n(\n\tDISTRIBUTION = ROUND_ROBIN,\n\tCLUSTERED COLUMNSTORE INDEX\n)\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

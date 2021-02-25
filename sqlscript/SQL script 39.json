@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 39",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [AddressID]\n,[CustomerID]\n,[AddressLine1]\n,[AddressLine2]\n,[City]\n,[State]\n,[ZipCode]\n,[CreatedDate]\n,[UpdatedDate]\n FROM [dbo].[CloudStreaming_Address]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

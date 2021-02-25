@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 7",
+	"properties": {
+		"content": {
+			"query": "\n -- TODO: Set parameter values here \n\n EXECUTE [dbo].[dimCustomersVanArsdel]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

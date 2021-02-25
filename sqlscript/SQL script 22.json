@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 22",
+	"properties": {
+		"content": {
+			"query": "DROP EXTERNAL TABLE [dbo].[CloudSales_Address]\nGO\n\nSET ANSI_NULLS ON\nGO\nSET QUOTED_IDENTIFIER ON\nGO\n\nCREATE EXTERNAL TABLE [dbo].[CloudSales_Address]\n( \n\t[AddressID] [varchar](500)  NULL,\n\t[CustomerID] [varchar](500)  NULL,\n\t[AddressLine1] [varchar](500)  NULL,\n\t[AddressLine2] [varchar](500)  NULL,\n\t[City] [varchar](500)  NULL,\n\t[State] [varchar](500)  NULL,\n\t[ZipCode] [varchar](500)  NULL,\n\t[CreatedDate] [varchar](500)  NULL,\n\t[UpdatedDate] [varchar](500)  NULL\n)\nWITH (DATA_SOURCE = [AzureDataLakeStoreNew], LOCATION = N'/Raw/CloudSales_Raw/dboAddresses', FILE_FORMAT = [csv_delimitedNew], \nREJECT_TYPE = VALUE, REJECT_VALUE = 0 )\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

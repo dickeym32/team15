@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "CREATE PROC [dbo].[dimCustomersVanArsdel]\nAS\nBEGIN\nINSERT INTO dbo.dimCustomers_VanArsdel\n\t([SourceSytemID] ,\n\t[CustomerSK] ,\n\t[CustomerID] ,\n\t[LastName] ,\n\t[FirstName] ,\n\t[AddressLine1] ,\n\t[AddressLine2] ,\n\t[City] ,\n\t[State] ,\n\t[ZipCode] ,\n\t[PhoneNumber] ,\n\t[RecordStartDate],\n\t[RecordEndDate],\n\t[ActiveFlag] )\nSELECT \n3,\nCONVERT(VARCHAR(32), HashBytes('MD5', CONCAT(FirstName,LastName,PhoneNumber)\n), 2) AS CustomerSK,\nTRIM(CustomerID),\nTRIM(LastName),\nTRIM(FirstName),\nTRIM(AddressLine1) ,\nTRIM(AddressLine2),\nTRIM(City),\nTRIM(State),\nTRIM(ZipCode),\nTRIM(PhoneNumber),\n CreatedDate,\n UpdatedDate,\n1\n\nFROM dbo.VanArsdel_Customers\nEND",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

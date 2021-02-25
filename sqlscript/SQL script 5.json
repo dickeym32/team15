@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 5",
+	"properties": {
+		"content": {
+			"query": "SELECT \n1,\nCONVERT(VARCHAR(32), HashBytes('MD5', CONCAT(FirstName,LastName,PhoneNumber)\n), 2) AS CustomerSK,\nTRIM(CSC.CustomerID),\nTRIM(LastName),\nTRIM(FirstName),\nTRIM(AddressLine1),\nTRIM(AddressLine2),\nTRIM(City),\nTRIM(State),\nTRIM(ZipCode),\nTRIM(PhoneNumber),\nCAST(TRIM(CSC.CreatedDate) AS DATE)  CreatedDate,\n--dbo.InlineMax(Convert(datetime,CSC.UpdatedDate),Convert(datetime,CSA.UpdatedDate))  UpdatedDate,\n1\n\nFROM dbo.CloudStreaming_Customers CSC \nLEFT OUTER JOIN dbo.CloudStreaming_Address CSA \nON CSC.CustomerID=CSA.CustomerID",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 38",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [CustomerID]\n,[LastName]\n,[FirstName]\n,[PhoneNumber]\n,[CreatedDate]\n,[UpdatedDate]\n FROM [dbo].[CloudStreaming_Customers]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 43",
+	"properties": {
+		"content": {
+			"query": "CREATE USER team15new FROM LOGIN team15new\n\nCREATE LOGIN team15new WITH PASSWORD = 'team!5New'\n\n LOGIN team15new\n WITH PASSWORD \n\n\nGO\n\n--Grant role to the user in the database\nEXEC sp_addrolemember 'db_owner', 'team15new';",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 33",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [SourceSytemID]\n,[CustomerSK]\n,[CustomerID]\n,[LastName]\n,[FirstName]\n,[AddressLine1]\n,[AddressLine2]\n,[City]\n,[State]\n,[ZipCode]\n,[PhoneNumber]\n,[RecordStartDate]\n,[RecordEndDate]\n,[ActiveFlag]\n FROM [dbo].[DimCustomers_FourthCoffee]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

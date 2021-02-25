@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "ALTER function dbo.InlineMax(@val1 date, @val2 date)\nreturns date\nas\nbegin\n  if @val1 > @val2\n    return @val1\n  return isnull(@val2,@val1)\nend",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

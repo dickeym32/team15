@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 14",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL FILE FORMAT [csv_delimited] \nWITH (\n\tFORMAT_TYPE = DELIMITEDTEXT, \n\tFORMAT_OPTIONS (\n\t\tFIELD_TERMINATOR = N',', \n\t\tSTRING_DELIMITER = N'\"', \n\t\tFIRST_ROW = 2, \n\t\tUSE_TYPE_DEFAULT = False, \n\t\tEncoding = N'UTF16'\n\t), \n\tDATA_COMPRESSION = 'org.apache.hadoop.io.compress.GzipCodec'\n)\nGO\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Team15SQLPoolV1",
+				"databaseName": "Team15SQLPoolV1"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
